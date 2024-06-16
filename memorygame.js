@@ -3,7 +3,7 @@ const card = document.createElement('div');
     
     const image = document.createElement("img");
    
-    image.src = "doggo.jpg"
+    image.src = "joker.jpg"
     image.alt = "Card Image Front"
 
    card.appendChild(image);
@@ -16,13 +16,13 @@ const card = document.createElement('div');
     card.classList.toggle("flipped");
     const imageSrc=document.querySelector("img").src
     console.log(imageSrc)
-    if(imageSrc.includes('doggo.jpg')){
-      image.src = "./puppy.jpg"
+    if(imageSrc.includes('joker.jpg')){
+      image.src = "pictures/back.jpg"
       image.alt = "Card Image Front"
     }
     else{
-      image.src = "./doggo.jpg"
-      image.alt = "Card Image Front"
+      image.src = "pictures/joker.jpg"
+      image.alt = "Card Image Back"
     }
     }
 
